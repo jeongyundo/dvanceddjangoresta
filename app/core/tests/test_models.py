@@ -14,3 +14,5 @@ class ModelTests(TestCase):
 
         self.assertEqual(user.email, email)
         self.assertTrue(user.check_password(password))
+        #password는 암호화되기 때문에 check_password를 통해서 참 유무를 확인 할 수 있다.
+        
